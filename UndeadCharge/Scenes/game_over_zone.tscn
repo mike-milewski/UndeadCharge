@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://co7g7gf0p5jsa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrlum"]
+size = Vector2(20, 51)
+
+[node name="GameOverZone" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="." groups=["GameOver"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -8.5)
+shape = SubResource("RectangleShape2D_rrlum")

@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://ct0ulh4rw02xx"]
+
+[ext_resource type="Texture2D" uid="uid://da6j0ctqmw2h5" path="res://Assets/Art/Sprites/Animated/Candle 5.png" id="1_0ddyc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6av0s"]
+atlas = ExtResource("1_0ddyc")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko68h"]
+atlas = ExtResource("1_0ddyc")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3rny"]
+atlas = ExtResource("1_0ddyc")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkl0q"]
+atlas = ExtResource("1_0ddyc")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d1uwt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6av0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko68h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3rny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkl0q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CandleThree" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_d1uwt")
+autoplay = "default"
+frame_progress = 0.89074
